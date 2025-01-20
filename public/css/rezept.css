@@ -1,0 +1,46 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 20px;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: rgb(255, 255, 255);
+  
+    
+}
+
+.left, .right {
+    width: 100%;
+    padding: 20px;
+}
+
+.recipe-image {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+h1 {
+    color: #6b3f27;
+    font-size: 50px;
+    
+}
+
+
+ul{
+    line-height: 30px;
+}
+p{
+    font-size: 20px;
+}
+.instructions {
+    margin-left: 20px;
+    margin-top: 20px;
+    line-height: 30px;
+
+}

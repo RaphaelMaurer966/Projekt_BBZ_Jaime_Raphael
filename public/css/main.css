@@ -1,0 +1,312 @@
+body {
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Container für die Kacheln */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Styling für jede Kachel */
+.tile {
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    color: crimson;
+}
+
+.tile:hover {
+    transform: translateY(-5px);
+}
+
+/* Styling für das Bild in der Kachel */
+.tile img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Styling für das Textfeld */
+.tile-text {
+    padding: 20px;
+}
+
+.tile-text h2 {
+    margin: 0 0 10px;
+    font-size: 1.5em;
+    color: #333;
+}
+
+.tile-text p {
+    margin: 0;
+    font-size: 1em;
+    color: #666;
+    
+}
+
+button {
+    color: crimson;
+    width: 200px;
+}
+
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: olive;
+    color: white;
+    padding: 10px 20px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: darkolivegreen;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: #556b2f;
+}
+
+.btn-login {
+    background-color: darkolivegreen;
+}
+
+.btn-register {
+    background-color: seagreen;
+}
+
+/* header
+
+/* styles.css */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: olive;
+    color: white;
+    padding: 10px 20px;
+    margin-bottom: 50px;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.btn {
+    text-decoration: none;
+    color: white;
+    background-color: darkolivegreen;
+    padding: 8px 15px;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+
+}
+
+.btn:hover {
+    background-color: #556b2f;
+}
+
+.btn-login {
+    background-color: darkolivegreen;
+}
+
+.btn-register {
+    background-color: seagreen;
+
+}
+
+.Vegetarisch {
+    background-color: darkseagreen;
+
+}
+
+/* register */
+
+.Titel {
+    font-family: Arial, sans-serif;
+    font-size: 36px;
+    text-align: center;
+    margin: 0 auto 30px;
+    display: block;
+}
+
+/* Formular CSS (unverändert) */
+form {
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+form input[type="text"],
+form input[type="password"],
+form input[type="submit"] {
+    width: 100%;
+    padding: 8px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+form input[type="text"]:focus,
+form input[type="password"]:focus {
+    border-color: #007BFF;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.3);
+}
+
+form input[type="submit"] {
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: background-color 0.3s ease;
+}
+
+form input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+form br {
+    display: none; /* Entferne die Platzierung durch `<br>` */
+}
+
+/*Login*/
+.registrieren {
+    display: block; /* Macht das <a>-Element zu einem Blockelement */
+    text-align: center; /* Zentriert den Text innerhalb des Elements */
+    margin-top: 20px; /* Fügt Abstand oberhalb des Links hinzu */
+    font-family: Arial, sans-serif; /* Optional: einheitliche Schriftart */
+    text-decoration: none; /* Entfernt die Standard-Unterstreichung */
+    color: #007BFF; /* Standard-Linkfarbe */
+    transition: color 0.3s ease; /* Weicher Übergang bei Hover */
+}
+
+a:hover {
+    color: #0056b3; /* Ändert die Farbe beim Hover */
+}
+
+.mitte{
+    display: block; /* Macht das <a>-Element zu einem Blockelement */
+    text-align: center; /* Zentriert den Text innerhalb des Elements */
+    margin-top: 20px; /* Fügt Abstand oberhalb des Links hinzu */
+    font-family: Arial, sans-serif; /* Optional: einheitliche Schriftart */}
+
+
+/* Footer */
+
+footer {
+    background-color: olive;
+    color: white;
+    padding: 20px 20px;
+    margin-top: 50px;
+    font-family: Arial, sans-serif;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    text-align: center; /* Sicherstellen, dass Inhalte bei kleineren Bildschirmen zentriert sind */
+}
+
+.footer-logo {
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.footer-highlight {
+    flex-grow: 1; /* Nimmt den freien Raum ein, um mittig zu erscheinen */
+    text-align: center; /* Zentriert den Text */
+}
+
+.footer-highlight p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: white; /* Gelb für Hervorhebung */
+    margin: 0;
+}
+
+.footer-info {
+    text-align: right; /* E-Mail-Adresse rechts ausrichten */
+}
+
+.footer-info a {
+    color: white;
+    text-decoration: underline;
+    transition: color 0.3s;
+}
+
+.footer-info a:hover {
+    color: lightyellow;
+}
+

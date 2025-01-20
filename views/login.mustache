@@ -1,0 +1,25 @@
+<head>
+<link rel="stylesheet" href="/css/main.css" />
+</head>
+
+{{> header}}
+
+<h1 class="mitte"> Login </h1>
+
+<form action="/login" enctype="multipart/form-data" method="post">
+    <div class="mb-3">
+        <label for="Username" class="form-label">Username</label>
+        <input type="email" class="form-control" id="Username" aria-describedby="emailHelp" name="email">
+        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+    </div>
+    <div class="mb-3">
+        <label for="password" class="form-label">Password</label>
+        <input type="password" class="form-control" id="password" name="passwort">
+    </div>
+    <button type="submit" class="btn btn-primary">Login</button>
+</form>
+
+<a class="registrieren" href="/register">Neuen Benutzer registrieren</a>
+
+
+

@@ -1,3 +1,54 @@
+{{> header}}
+
+<h1>Eintrag erstellen:</h1>
+
+<form action="/dashboard" enctype="multipart/form-data" method="post">
+
+    {{#post_edit.id}}
+        <input type="hidden" name="id" value="{{post_edit.id}}">
+    {{/post_edit.id}}
+
+    <div class="mb-3">
+        <label for="titel" class="form-label">Titel</label>
+        <input type="text" class="form-control" id="titel" name="titel" value="{{post_edit.titel}}" required>
+    </div>
+    <div class="mb-3">
+        <label for="inhalt" class="form-label">Inhalt</label>
+        <input type="text" class="form-control" id="inhalt" name="inhalt" value="{{post_edit.inhalt}}" required>
+    </div>
+    <div class="mb-3">
+        <label for="bild" class="form-label">Bild</label>
+        <input type="file" class="form-control" id="bild" name="bild" value="{{post_edit.bild}}" accept="image/png">
+    </div>
+    <button type="submit" class="btn btn-primary">Speichern</button>
+</form>
+
+<h2>Eintrag Liste:</h2>
+
+<div class="row">
+{{#posts}}
+<div class="col">
+
+    {{#is_mine}}
+    <a href="/dashboard/{{id}}">
+        <img src="/uploads/{{bild}}" width="100px">
+    </a>
+    {{/is_mine}}
+    {{^is_mine}}
+        <img src="/uploads/{{bild}}" width="100px">
+    {{/is_mine}}
+    <h3>{{titel}}</h3>
+    <p>{{inhalt}}</p>
+    {{#is_mine}}
+    <form action="/dashboard/delete" enctype="multipart/form-data" method="post">
+        <input type="hidden" name="id" value="{{id}}">
+        <button type="submit" class="btn btn-primary">Löschen</button>
+    </form>
+    {{/is_mine}}
+</div>
+{{/posts}}
+</div>
 
 
-<h1>Hallo Welt</h1>
+
+{{> footer}}
